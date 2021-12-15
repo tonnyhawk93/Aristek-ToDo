@@ -22,7 +22,7 @@ const reducer = (state = initialState, {type, payload}) => {
             return {...state, loading: false, tasks: state.tasks.filter(task => task.id !== payload)}
         case EDIT_TASK:
             if(!payload.completed) return {...state, loading: false, tasks: state.tasks.map(task => task.id === payload.id ? payload : task)}
-            return {...state, loading: false, tasks: [payload, ...state.tasks.filter(task => task.id !== payload.id)]}
+            return {...state, loading: false, tasks: [...state.tasks.filter(task => task.id !== payload.id), payload]}
         default:
             return {...state}
     }
