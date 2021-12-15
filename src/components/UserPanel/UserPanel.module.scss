@@ -1,0 +1,25 @@
+@import '../../styles/colors.scss';
+
+.container {
+    display: flex;
+    align-items: center;
+    .nameClass {
+        font-weight: 400;
+        margin-right: 8px;
+        font-size: 14px;
+    }
+    .iconClass {
+        width: 32px;
+        height: 32px;
+        margin-right: 11px;
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+    .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

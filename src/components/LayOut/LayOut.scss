@@ -1,0 +1,20 @@
+@import '../../styles/sizes.scss';
+
+.LayOut {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "header header"
+                         "sideBar content";
+    grid-template-columns: $sideBarWith 1fr;
+    grid-template-rows: $headerHeight 1fr;
+    &__content {
+        padding: 24px;
+        grid-area: content;
+    }
+    &__header {
+        grid-area: header; 
+    }
+    &__sideBar {
+        grid-area: sideBar; 
+    }
+}

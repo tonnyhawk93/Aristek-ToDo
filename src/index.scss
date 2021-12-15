@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: local('Open Sans'), url(./fonts/OpenSans-Regular.ttf) format('ttf');
+  font-weight: 600;
+  src: local('Open Sans'), url(./fonts/OpenSans-SemiBold.ttf) format('ttf');
+  font-weight: bold;
+  src: local('Open Sans'), url(./fonts/OpenSans-Bold.ttf) format('ttf');
+}
+
+* {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}

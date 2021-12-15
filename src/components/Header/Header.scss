@@ -1,0 +1,44 @@
+@import '../../styles/colors.scss';
+@import '../../styles/sizes.scss';
+
+.Header {
+    width: 100%;
+    height: $headerHeight;
+    padding: 0px 30px 0px 16px;
+    color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    &__title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &__title {
+        font-size: 16px;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        margin-right: 42px;
+    }
+}
+
+.Logo {
+    display: flex;
+    flex-direction: column;
+    &__text {
+        margin-top: 2.25px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 6px;
+    }
+    &__image {
+       display: flex;
+       justify-content: center;
+       width: 18.13px;
+       height: 23.52px
+    }
+}

@@ -1,0 +1,25 @@
+@import '../../styles/colors.scss';
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    color: $error;
+    max-width: 320px;
+    min-height: 65px;
+    overflow: auto;
+    padding: 12px 24px;
+    border: 1px solid #ECECEC;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
